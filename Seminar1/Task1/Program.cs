@@ -1,2 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿//Предполагаем что числа в задаче целые
+
+int NumA = -9;
+int NumB = -3;
+if (NumA >= NumB)
+{
+    Console.Write("max = ");
+    Console.WriteLine(NumA);
+}
+else
+{
+    Console.Write("max = ");
+    Console.WriteLine(NumB);
+}
