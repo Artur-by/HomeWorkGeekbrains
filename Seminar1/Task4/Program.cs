@@ -1,21 +1,28 @@
 ﻿// программа, которая на вход принимает число (N),
 // а на выходе показывает все чётные числа от 1 до N
 
-// предполагаем что в задче все числа целые, положительные
+// предполагаем что в задче все числа целые
 
-int N = 11;
-int count = 1;
+int N = 0;
 
-while (count <= N)
+if (N < 1)
 {
-    if (count % 2 == 0)
+    Console.WriteLine(" N вне диапазона");
+}
+else
+{
+    int count = 1;
+    while (count <= N)
     {
-        Console.WriteLine(count);
-        count++;
-    }
-    else
-    {
-        count++;
+        if (count % 2 == 0)
+        {
+            Console.WriteLine(count);
+            count++;
+        }
+        else
+        {
+            count++;
+        }
     }
 }
 
