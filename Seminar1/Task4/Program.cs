@@ -1,2 +1,24 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// программа, которая на вход принимает число (N),
+// а на выходе показывает все чётные числа от 1 до N
+
+// предполагаем что в задче все числа целые, положительные
+
+int N = 11;
+int count = 1;
+
+while (count <= N)
+{
+    if (count % 2 == 0)
+    {
+        Console.WriteLine(count);
+        count++;
+    }
+    else
+    {
+        count++;
+    }
+}
+
+
+
 
