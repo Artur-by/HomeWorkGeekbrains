@@ -2,7 +2,7 @@
 //является ли одно число квадратом другого.
 
 int A = 25;
-int B = 1;
+int B = -5;
 if (A * A == B || B * B == A)
 {
     Console.WriteLine("Да");
