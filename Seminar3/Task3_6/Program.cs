@@ -4,10 +4,10 @@ int Cube(int i)
     return i * i * i;
 }
 
-int num = 5;
+int N = -5;
 
-if (num < 0) num = -num;
-for (int i = 1; i <= num; i++)
+if (N < 0) N = -N;
+for (int i = 1; i <= N; i++)
 {
     int cub = Cube(i);
     Console.WriteLine(cub);
