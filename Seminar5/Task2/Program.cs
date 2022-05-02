@@ -32,6 +32,8 @@ void ReadArr(int[] arr)
     Console.WriteLine();
 }
 
+// метод подсчета суммы на нечетных позициях
+// перебором через один элемент
 int Sum(int[] arr)
 {
     int sum = 0;
