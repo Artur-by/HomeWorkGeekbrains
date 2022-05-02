@@ -1,5 +1,6 @@
 ﻿// Задайте массив заполненный случайными положительными трёхзначными числами.
 // Напишите программу, которая покажет количество чётных чисел в массиве
+
 Console.Write("Введите количество элементов массива: ");
 string s = Console.ReadLine();
 int N = Convert.ToInt32(s);
@@ -16,7 +17,7 @@ int[] FillArr(int[] arr)
 {
     for (int i = 0; i < arr.Length; i++)
     {
-        arr[i] = new Random().Next(100, 999);
+        arr[i] = new Random().Next(100, 1000);
     }
     return arr;
 }
