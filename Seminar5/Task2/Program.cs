@@ -1,7 +1,7 @@
 ﻿// Задача 2: Задайте одномерный массив, заполненный случайными числами.
 //Найдите сумму элементов, стоящих на нечётных позициях
 
-Console.WriteLine("Введите количество элементов массива: ");
+Console.Write("Введите количество элементов массива: ");
 string s = Console.ReadLine();
 int N = Convert.ToInt32(s);
 
@@ -17,7 +17,7 @@ int[] FillArr(int[] arr)
 {
     for (int i = 0; i < arr.Length; i++)
     {
-        arr[i] = new Random().Next(0, 10);
+        arr[i] = new Random().Next(0, 100);
     }
     return arr;
 }
