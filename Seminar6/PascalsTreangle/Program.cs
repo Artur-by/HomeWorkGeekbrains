@@ -9,7 +9,7 @@ while (baseTreangle % 2 == 0)
     baseTreangle = Convert.ToInt32(Console.ReadLine());
 }
 
-
+const int cellWidth = 3;
 // метод вывода в консоль 2х мерного массива
 // с учетом только нечетных значений
 void PrintArray(int[,] array)
@@ -19,7 +19,7 @@ void PrintArray(int[,] array)
         for (int j = 0; j < array.GetLength(1); j++)
         {
             if (array[i, j] % 2 == 0) Console.Write($"   ");
-            else Console.Write($" {array[i, j]} ");
+            else Console.Write($"{array[i, j],cellWidth}");
         }
         Console.WriteLine();
     }
