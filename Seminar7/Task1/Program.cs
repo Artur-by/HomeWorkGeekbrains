@@ -9,6 +9,7 @@ Console.Write("Введите число строк массива: ");
 int a = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число столбцов массива: ");
 int b = Convert.ToInt32(Console.ReadLine());
+const int cellWidth = 3;
 
 // метод создания массива
 int[,] Create(int a, int b)
@@ -24,7 +25,7 @@ void PrintArr(int[,] arr)
     {
         for (int j = 0; j < arr.GetLength(1); j++)
         {
-            Console.Write($"  {arr[i, j]} ");
+            Console.Write($"{arr[i, j],cellWidth} ");
         }
         Console.WriteLine();
     }
