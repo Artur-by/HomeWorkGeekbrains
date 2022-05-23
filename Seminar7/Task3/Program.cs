@@ -7,6 +7,8 @@ Console.Write("Введите ширину массива: ");
 int b = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите высоту массива: ");
 int d = Convert.ToInt32(Console.ReadLine());
+
+// проверка на количество элементов массива
 while (a * b * d > 99)
 {
     Console.WriteLine("Количество элементов массива превышает");
