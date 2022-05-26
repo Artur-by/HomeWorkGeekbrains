@@ -1,25 +1,7 @@
 ﻿// Сформировать трехмерный массив не повторяющимися двузначными числами
 // показать его построчно на экран выводя индексы соответствующего элемента
 
-Console.Write("Введите длину массива: ");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите ширину массива: ");
-int b = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите высоту массива: ");
-int d = Convert.ToInt32(Console.ReadLine());
 
-// проверка на количество элементов массива
-while (a * b * d > 99)
-{
-    Console.WriteLine("Количество элементов массива превышает");
-    Console.WriteLine("количество не повторяющихся двузначных чисел!");
-    Console.Write("Введите новую длину массива: ");
-    a = Convert.ToInt32(Console.ReadLine());
-    Console.Write("Введите новую ширину массива: ");
-    b = Convert.ToInt32(Console.ReadLine());
-    Console.Write("Введите новую высоту массива: ");
-    d = Convert.ToInt32(Console.ReadLine());
-}
 const int cellWidth = 3;
 
 // метод создания массива
@@ -55,6 +37,26 @@ void PrintArr(int[,,] arr)
         }
         Console.WriteLine();
     }
+}
+
+Console.Write("Введите длину массива: ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите ширину массива: ");
+int b = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите высоту массива: ");
+int d = Convert.ToInt32(Console.ReadLine());
+
+// проверка на количество элементов массива
+while (a * b * d > 99)
+{
+    Console.WriteLine("Количество элементов массива превышает");
+    Console.WriteLine("количество не повторяющихся двузначных чисел!");
+    Console.Write("Введите новую длину массива: ");
+    a = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Введите новую ширину массива: ");
+    b = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Введите новую высоту массива: ");
+    d = Convert.ToInt32(Console.ReadLine());
 }
 
 int[,,] matrix = Create(a, b, d);
