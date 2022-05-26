@@ -2,10 +2,6 @@
 
 // В случае одинаковых сумм в строках отображает первую
 
-Console.Write("Введите число строк массива: ");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите число столбцов массива: ");
-int b = Convert.ToInt32(Console.ReadLine());
 
 // метод создания массива
 int[,] Create(int a, int b)
@@ -67,6 +63,7 @@ int MinSum(int[] list)
     return minLine;
 }
 
+// метод вывода массива в консоль
 void PrintList(int[] list)
 {
     for (int i = 0; i < list.Length; i++)
@@ -75,11 +72,17 @@ void PrintList(int[] list)
     }
 }
 
+Console.Write("Введите число строк массива: ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите число столбцов массива: ");
+int b = Convert.ToInt32(Console.ReadLine());
+
 int[,] arr = Create(a, b);
 Console.WriteLine("Созданный массив:");
 PrintArr(arr);
 Console.WriteLine();
 int[] sumlist = SumLine(arr);
 PrintList(sumlist);
+Console.WriteLine();
 Console.WriteLine($"Строка с наименьшей суммой элементов  {MinSum(sumlist) + 1}");
 

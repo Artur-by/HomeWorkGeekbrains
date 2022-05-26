@@ -1,10 +1,4 @@
 ﻿// Найти произведение двух матриц
-Console.Write("Введите число строк первой матрицы: ");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите число столбцов первой матрицы: ");
-int b = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите число столбцов второй матрицы: ");
-int d = Convert.ToInt32(Console.ReadLine());
 
 
 // метод создания массива
@@ -47,6 +41,14 @@ int Multiplication(int[,] matr1, int[,] matr2, int m, int n)
     return sum;
 
 }
+
+Console.Write("Введите число строк первой матрицы: ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите число столбцов первой матрицы: ");
+int b = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите число столбцов второй матрицы: ");
+int d = Convert.ToInt32(Console.ReadLine());
+
 
 int[,] matrix1 = Create(a, b);
 int[,] matrix2 = Create(b, d);

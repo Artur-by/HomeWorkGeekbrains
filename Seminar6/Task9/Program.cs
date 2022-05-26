@@ -1,9 +1,5 @@
 ﻿// Написать программу, упорядочивания по убыванию элементы каждой строки двумерной массива
 
-Console.Write("Введите число строк массива: ");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите число столбцов массива: ");
-int b = Convert.ToInt32(Console.ReadLine());
 
 // метод создания массива
 int[,] Create(int a, int b)
@@ -54,6 +50,11 @@ int[,] Streamline(int[,] list)
     return list;
 }
 
+
+Console.Write("Введите число строк массива: ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите число столбцов массива: ");
+int b = Convert.ToInt32(Console.ReadLine());
 
 int[,] array = Create(a, b);
 Console.WriteLine("Исходный массив: ");
